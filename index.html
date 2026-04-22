@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lab Week 3 - CSS</title>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 100%;
+        }
+        .presensi tr td {
+            border: 1px solid black;
+            height: 30px;
+            text-align: center;
+        }
+        .label {
+            padding: 5px 10px 5px 10px;
+            border-radius: 10px;
+        }
+        .bg-red {
+            background-color: red;
+        }
+        .bg-green {
+            background-color: rgb(20, 187, 20);
+        }
+        th {
+            background-color: yellow;
+        }
+
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1 style="color: blue0;">1. My Heading </h1>
+    <img style="width: 600px;" src="https://i0.wp.com/www.flyajetfighter.com/wp-content/uploads/2025/07/Rafale-ballon.jpg?ssl=1" alt="">
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 600;"> This is a inline stylesheet</p>
+<hr>
+<h2>2. Second Way to use CSS using embed CSS</h2>
+<table class="presensi">
+    <tr>
+        <th>Kolom 1</th>
+        <th>Kolom 2</th>
+        <th>Kolom 3</th>
+    </tr>
+    <tr>
+        <td>NIM</td>
+        <td>NAME</td>
+        <td><label>Lokasi</label></td>
+    </tr>
+    <tr>
+        <td>24.61.0282</td>
+        <td>DAFFA MASHABI AKMAL SYARIF</td>
+        <td><label class="label bg-green">AMIKOM</label></td>
+    </tr>
+    <tr>
+        <td>24.61.0280</td>
+        <td>SAMUEL ANDHIKA PRASETYO</td>
+        <td><label class="label bg-red">AMIKOM</label></td>
+    </tr>
+</table>
+<hr>
+    <h2>3. Third way to use CSS using external CSS</h2>
+    <div class="login-form">
+        <div class="body">
+            <h3>Login Form</h3>
+            <form action="">
+                <label for="">Username : </label>
+                <input type="text" name="username" id="username" placeholder="Input your username">
+                <label for="">Password : </label>
+                <input type="password" name="password" id="password" placeholder="Input your password">
+                <button onclick="alert('Login clicked!')" id="btn-login" type="Submit">Login</button>   
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
